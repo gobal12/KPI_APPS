@@ -80,7 +80,7 @@ if (!$result) {
                     <div class="card shadow mb-4">
     
                     <div class="card-header py-3">
-                        <a href="AddKaryawan.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Tambah Karyawan</a>
+                        <a href="addkaryawan.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Tambah Karyawan</a>
                         <a href="addKaryawanExcel.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Import Excel</a>
                     </div>
 
@@ -111,7 +111,7 @@ if (!$result) {
                                             echo "<td>" . $row["unit"] . "</td>";
                                             echo "<td>" . $row["jabatan"] . "</td>";
                                             echo "<td>";
-                                            echo "<a href='EditKaryawan.php?id=" . $row["id"] . "' class='btn btn-primary' title='Edit'><i class='fas fa-edit'></i></a> ";
+                                            echo "<a href='editkaryawan.php?id=" . $row["id"] . "' class='btn btn-primary' title='Edit'><i class='fas fa-edit'></i></a> ";
                                             echo "<button type='button' class='btn btn-danger' onclick='confirmDelete(" . $row["id"] . ", event)' title='Delete'><i class='far fa-trash-alt'></i></button>";
                                             echo "</td>";
                                             echo "</tr>";
